@@ -100,7 +100,7 @@ Index of pflogsumm.pl Frequently Asked Questions (in no particular order)
 	      .
 	# ---End: SMTPD_STATS_SUPPORT---
 
-    However, if you do this you will lose support for --smtpd_stats.
+    However, if you do this you will lose support for --smtpd-stats.
 
     Later versions of the Pflogsumm distribution include a script to
     semi-automate removing smtpd stats support, if you so-desire.
@@ -293,7 +293,7 @@ Index of pflogsumm.pl Frequently Asked Questions (in no particular order)
     away with manual inspection entirely.
 
     For those that really want all that extra detail in the log summary
-    reports, specify the "--verbose_msg_detail" switch.
+    reports, specify the "--verbose-msg-detail" switch.
 
     See Also: 25. Sending Logfile Samples
 
@@ -473,7 +473,7 @@ Index of pflogsumm.pl Frequently Asked Questions (in no particular order)
     twice.
 
     And yes, I tried.  I really, really tried.  If I recall correctly, I
-    spent come two days mucking-about with this problem.  Actually thought
+    spent some two days mucking-about with this problem.  Actually thought
     I had it once or twice.  But the results inevitably failed regression
     testing.  At the end of this, and with some more careful thought, I
     realized it just wasn't possible.  If you think you can prove me
@@ -483,6 +483,12 @@ Index of pflogsumm.pl Frequently Asked Questions (in no particular order)
     johnfawcett at tiscali-dot-it believes he's done it.  You may find
     prefiltering your log with his "prepflog" does it for you.  You can
     find it at <http://web.tiscali.it/postfix/>.
+    
+	Note: Because of the way John's pre-processing script works,
+	which, given my own experiments, is probably the way it *has*
+	to work to work correctly, integrating his code into Pflogsumm
+	would be difficult, at best, if it's even possible within
+	Pflogsumm's current structure.
 
 
 15. Pflogsumm's numbers don't add up
@@ -642,7 +648,7 @@ Index of pflogsumm.pl Frequently Asked Questions (in no particular order)
     Reject reason strings found in the mail log will be truncated at the
     first comma (","), colon (":") or semi-colon (";").  If you want a
     "clause" in your reject message to appear in Pflogsumm's output,
-    without having to specify --verbose_msg_detail, use a punctuation mark
+    without having to specify --verbose-msg-detail, use a punctuation mark
     other than one of those three, such as a dash ("-").
 
 
@@ -751,4 +757,4 @@ Index of pflogsumm.pl Frequently Asked Questions (in no particular order)
     http://jimsun.LinxNet.com/postfix_contrib.html
 
 
-Created: 15 Feb., 1999 / Last updated: 10 April, 2004
+Created: 15 Feb., 1999 / Last updated: 22 March, 2010

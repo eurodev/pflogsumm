@@ -1,6 +1,12 @@
 
 To Be Done (Maybe)
 
+    Fix parsing for "451 4.3.5 Server configuration error;"
+
+    Rename pflogsumm.pl -> pflogsumm.  See
+
+	http://docs.freebsd.org/info/cvs/cvs.info.Moving_files.html
+
     date ranges, "lastweek", etc.?
 
     (options for?) break-down by local vs. non-local?, further
